@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 Lab 3 - Custom Font Example</title>
+    <style>
+        /* Reset and general styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Special Elite', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            color: #2e86de; /* Dark blue */
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: #333; /* Dark gray */
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #555; /* Medium gray */
+        }
+
+        /* Styling for code snippets */
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #27ae60; /* Green */
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Custom Fonts in Webpages</h1>
+    <p>This page demonstrates how to serve a custom font using CSS's <code>@font-face</code> rule.</p>
+    <p>The font used in this example is called "Special Elite", which is not commonly available on most computers.</p>
+    
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
